@@ -1,0 +1,187 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <author>Gary Cramblitt</author>
+ <class>Akregator::SettingsBrowser</class>
+ <widget class="QWidget" name="Akregator::SettingsBrowser">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>474</width>
+    <height>510</height>
+   </rect>
+  </property>
+  <layout class="QVBoxLayout" name="verticalLayout">
+   <item>
+    <layout class="QFormLayout" name="formLayout">
+     <item row="0" column="0">
+      <widget class="QLabel" name="LMBlabel">
+       <property name="text">
+        <string>Left mouse click:</string>
+       </property>
+      </widget>
+     </item>
+     <item row="0" column="1">
+      <widget class="QComboBox" name="kcfg_LMBBehaviour">
+       <item>
+        <property name="text">
+         <string>Open in Tab</string>
+        </property>
+       </item>
+       <item>
+        <property name="text">
+         <string>Open in Background Tab</string>
+        </property>
+       </item>
+       <item>
+        <property name="text">
+         <string>Open in External Browser</string>
+        </property>
+       </item>
+      </widget>
+     </item>
+     <item row="1" column="0">
+      <widget class="QLabel" name="MMBlabel">
+       <property name="text">
+        <string>Middle mouse click:</string>
+       </property>
+      </widget>
+     </item>
+     <item row="1" column="1">
+      <widget class="QComboBox" name="kcfg_MMBBehaviour">
+       <item>
+        <property name="text">
+         <string>Open in Tab</string>
+        </property>
+       </item>
+       <item>
+        <property name="text">
+         <string>Open in Background Tab</string>
+        </property>
+       </item>
+       <item>
+        <property name="text">
+         <string>Open in External Browser</string>
+        </property>
+       </item>
+      </widget>
+     </item>
+    </layout>
+   </item>
+   <item>
+    <widget class="QGroupBox" name="externalBrowserGroupBox">
+     <property name="title">
+      <string>External Browsing</string>
+     </property>
+     <layout class="QGridLayout">
+      <item row="1" column="1">
+       <widget class="QLineEdit" name="kcfg_ExternalBrowserCustomCommand">
+        <property name="enabled">
+         <bool>false</bool>
+        </property>
+        <property name="text">
+         <string>firefox %u</string>
+        </property>
+       </widget>
+      </item>
+      <item row="1" column="0">
+       <widget class="QRadioButton" name="kcfg_ExternalBrowserUseCustomCommand">
+        <property name="text">
+         <string>Use &amp;this command:</string>
+        </property>
+       </widget>
+      </item>
+      <item row="0" column="0" colspan="2">
+       <widget class="QRadioButton" name="kcfg_ExternalBrowserUseKdeDefault">
+        <property name="text">
+         <string>Use default web &amp;browser</string>
+        </property>
+        <property name="checked">
+         <bool>true</bool>
+        </property>
+       </widget>
+      </item>
+     </layout>
+    </widget>
+   </item>
+   <item>
+    <widget class="QGroupBox" name="tabsGroupBox">
+     <property name="title">
+      <string>Tabs</string>
+     </property>
+     <layout class="QVBoxLayout" name="verticalLayout_2">
+      <item>
+       <widget class="QCheckBox" name="kcfg_AlwaysShowTabBar">
+        <property name="text">
+         <string>Always show the tab bar</string>
+        </property>
+       </widget>
+      </item>
+      <item>
+       <widget class="QCheckBox" name="kcfg_CloseButtonOnTabs">
+        <property name="text">
+         <string>Show close button on each tab</string>
+        </property>
+       </widget>
+      </item>
+      <item>
+       <widget class="QCheckBox" name="kcfg_NewWindowInTab">
+        <property name="text">
+         <string>Open links in new tab instead of in new window</string>
+        </property>
+       </widget>
+      </item>
+     </layout>
+    </widget>
+   </item>
+   <item>
+    <widget class="QGroupBox" name="groupBox">
+     <property name="title">
+      <string>Security</string>
+     </property>
+     <layout class="QVBoxLayout" name="verticalLayout_3">
+      <item>
+       <widget class="QCheckBox" name="kcfg_CheckPhishingUrl">
+        <property name="text">
+         <string>Verify URLs using Google's Safe Browsing API</string>
+        </property>
+       </widget>
+      </item>
+      <item>
+       <widget class="QCheckBox" name="kcfg_EnableJavascript">
+        <property name="text">
+         <string>Enable Javascript</string>
+        </property>
+       </widget>
+      </item>
+     </layout>
+    </widget>
+   </item>
+   <item>
+    <widget class="QGroupBox" name="groupBox_2">
+     <property name="title">
+      <string>Misc</string>
+     </property>
+     <layout class="QVBoxLayout" name="verticalLayout_4">
+      <item>
+       <widget class="QCheckBox" name="kcfg_AccessKeyEnabled">
+        <property name="text">
+         <string>Access Key Enabled</string>
+        </property>
+       </widget>
+      </item>
+     </layout>
+    </widget>
+   </item>
+  </layout>
+ </widget>
+ <customwidgets>
+  <customwidget>
+   <class>QComboBox</class>
+   <extends>QComboBox</extends>
+   <header>kcombobox.h</header>
+  </customwidget>
+ </customwidgets>
+ <resources/>
+ <connections/>
+</ui>
